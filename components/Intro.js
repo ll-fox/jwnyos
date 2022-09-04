@@ -20,7 +20,7 @@ const Intro = () => {
         <button className={style.button}>DISCOVER</button>
       </div>
       <div className={style.card}>
-        <Image src="/img/Avocado.png" layout="fill" objectFit="cover" alt="" />
+        <Image src="/img/zao.png" layout="fill" objectFit="cover" alt="" />
       </div>
     </div>
   )

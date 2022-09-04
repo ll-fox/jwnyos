@@ -13,18 +13,13 @@ const contentStyle = {
 const App = () => (
   <Carousel autoplay>
     <div className={styles.item}>
-      <Image src="/img/logo.png" layout="fill" objectFit="cover" alt="" />
+      <Image src="/img/1.jpg" layout="fill" objectFit="cover" alt="" />
     </div>
     <div className={styles.item}>
-      <Image
-        src="/img/production.jpeg"
-        layout="fill"
-        objectFit="cover"
-        alt=""
-      />
+      <Image src="/img/bz1.jpg" layout="fill" objectFit="cover" alt="" />
     </div>
     <div className={styles.item}>
-      <Image src="/img/slid1.jpg" layout="fill" objectFit="cover" alt="" />
+      <Image src="/img/zao1.jpg" layout="fill" objectFit="cover" alt="" />
     </div>
   </Carousel>
 )

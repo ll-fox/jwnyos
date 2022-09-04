@@ -5,3 +5,8 @@
   display: block;
   position: relative;
 }
+@media screen and (max-width: 480px) {
+  .item {
+    height: 30vh;
+  }
+}

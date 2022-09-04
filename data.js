@@ -5,7 +5,7 @@ export const data = [
     title: 'dongzao',
     desc: 'dongzao dongzao dongzao dongzao dongzao dongzao dongzao dongzao dongzao dongzao .',
     video: 'Avocado.mp4',
-    photo: 'zao.jpg',
+    photo: 'zao1.jpg',
     longDesc:
       'Simply drag and drop photos and videos into your workspace to automatically add them to your Collab Cloud library. Simply drag and drop photos and videos into your workspace to automatically add them to your Collab Cloud library.',
     images: [
@@ -40,7 +40,7 @@ export const data = [
     name: 'development',
     title: 'dongzao',
     desc: 'dongzao dongzao dongzao dongzao dongzao dongzao dongzao dongzao dongzao dongzao .',
-    photo: 'zao.jpg',
+    photo: 'zao1.jpg',
     longDesc:
       'Simply drag and drop photos and videos into your workspace to automatically add them to your Collab Cloud library. Simply drag and drop photos and videos into your workspace to automatically add them to your Collab Cloud library.',
     images: [
@@ -75,7 +75,7 @@ export const data = [
     name: 'production',
     title: 'dongzao',
     desc: 'dongzao dongzao dongzao dongzao dongzao dongzao dongzao dongzao dongzao dongzao .',
-    photo: 'zao.jpg',
+    photo: 'zao1.jpg',
     longDesc:
       'Simply drag and drop photos and videos into your workspace to automatically add them to your Collab Cloud library. Simply drag and drop photos and videos into your workspace to automatically add them to your Collab Cloud library.',
     images: [
@@ -110,7 +110,7 @@ export const data = [
     name: 'photography',
     title: 'dongzao',
     desc: 'dongzao dongzao dongzao dongzao dongzao dongzao dongzao dongzao dongzao dongzao .',
-    photo: 'zao.jpg',
+    photo: 'zao1.jpg',
     longDesc:
       'Simply drag and drop photos and videos into your workspace to automatically add them to your Collab Cloud library. Simply drag and drop photos and videos into your workspace to automatically add them to your Collab Cloud library.',
     images: [
