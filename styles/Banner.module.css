@@ -1,0 +1,44 @@
+.bannerBottom {
+  background: url(/img/slid1.jpg) no-repeat 0px 0px fixed;
+  background-size: cover;
+  padding: 8em 0;
+}
+.bannerBottom h2 {
+  font-size: 3.5em;
+  margin-top: 1em;
+  font-family: 'Slabo27px-Regular';
+  line-height: 1em;
+  color: #fff;
+}
+.bannerBottom p {
+  font-size: 1em;
+  margin-top: 1.5em;
+  color: rgba(179, 179, 179, 0.89);
+  line-height: 1.6em;
+}
+.bannerBottom h4 {
+  font-size: 1.6em;
+  color: #fff;
+  letter-spacing: -1px;
+}
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}

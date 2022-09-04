@@ -1,0 +1,26 @@
+.welcome {
+  padding: 5em 0;
+  text-align: center;
+}
+.welcomeInfo {
+  margin: 1em 0;
+}
+.welcomeGrids {
+  float: left;
+  width: 50%;
+}
+.welcomeGrids:nth-child(1) {
+  padding-right: 0.5em;
+}
+.welcomeGrids:nth-child(2) {
+  padding-left: 0.5em;
+}
+.welcome p {
+  font-size: 0.85em;
+}
+@media (min-width: 992px) {
+  .welcomeGrids {
+    width: 50%;
+    float: left;
+  }
+}

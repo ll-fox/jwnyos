@@ -1,0 +1,7 @@
+.item {
+  height: 70vh;
+  width: 100%;
+  overflow: hidden;
+  display: block;
+  position: relative;
+}
