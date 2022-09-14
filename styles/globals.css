@@ -24,10 +24,10 @@ a {
 }
 
 .circle {
-  width: 100vh;
-  height: 100vh;
+  width: calc(100vh - 50px);
+  height: calc(100vh - 50px);
   border-radius: 50%;
-  opacity: 0.2;
+  opacity: 0.3;
   position: absolute;
   z-index: 999;
   /* background-color: green; */
