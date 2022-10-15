@@ -11,7 +11,7 @@ const Intro = () => {
       {/* <Circle backgroundColor="#01c686" right="-40vh" /> */}
       <div className={style.card}>
         <h1 className={style.title}>
-          <span className={style.brandName}>金翁农业</span> 科技 有限公司
+          <span className={style.brandName}>金翁农业</span> 科技有限公司
         </h1>
         <div className={style.head}></div>
         <p className={style.desc}>

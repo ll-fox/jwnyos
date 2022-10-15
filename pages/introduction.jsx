@@ -20,7 +20,8 @@ const Introduction = () => {
           </div>
           <p
             style={{
-              color: 'rgb(121 118 118)'
+              color: 'rgb(121 118 118)',
+              fontFamily: 'Yuanti SC'
             }}
           >
             富平县金金农业科技有限公司成立于 2018年 <br />

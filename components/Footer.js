@@ -18,23 +18,24 @@ const Footer = () => {
       </div>
       <div className={style.cardS}>
         <div className={style.cardItem}>
-          联系电话：
-          <br /> 123456789000
+          <Image src="/img/cho7.png" width="35px" height="35px" alt="" />
+          <span className={style.linkText}>15829000737</span>
         </div>
         <div className={style.cardItem}>
-          邮箱：
-          <br /> 1111111111@incloud.com
+          <Image src="/img/cho8.png" width="35px" height="35px" alt="" />
+          <span className={style.linkText}>
+            陕西省渭南市富平县曹村镇太白村一组
+          </span>
         </div>
       </div>
       <div className={style.cardS}>
         <div className={style.cardItem}>
-          小红书:
-          <br /> 11111111
+          <Image src="/img/cho9.png" width="35px" height="35px" alt="" />
+          <span className={style.linkText}>yangyifan@jwny.onmicrosoft.com</span>
         </div>
         <div className={style.cardItem}>
-          © 2022 JWNY COMPANY,
-          <br />
-          ALL RIGHTS RESERVED
+          <Image src="/img/cho10.png" width="35px" height="35px" alt="" />
+          <span className={style.linkText}>https://jwny.xyz</span>
         </div>
       </div>
     </div>

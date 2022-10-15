@@ -1,17 +1,17 @@
 .container {
-  height: 250px;
+  /* height: 250px; */
   border-top: 3px solid black;
   display: flex;
   align-items: center;
   justify-content: space-around;
   font-size: 18px;
-  padding: 20px 50px;
+  padding: 0 50px;
 }
 
 .title {
   font-weight: 400;
   color: white;
-  background-color: #f8c81a;
+  background-color: #c49b45;
   width: max-content;
   padding: 5px;
   margin: 20px;
@@ -20,7 +20,7 @@
 
 .title:hover {
   background-color: white;
-  color: #f8c81a;
+  color: #c49b45;
 }
 
 .linkTitle {
@@ -41,8 +41,9 @@
 }
 
 .linkText {
-  margin-right: 20px;
+  margin: 0 10px;
   cursor: pointer;
+  width: 90%;
 }
 
 .cardL {
@@ -54,26 +55,33 @@
 }
 
 .cardItem {
-  font-size: 16px;
-  margin: 30px;
+  font-size: 18px;
+  margin: 20px;
   font-weight: 400;
   color: rgb(101, 100, 100);
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  text-align: right;
+  text-align: left;
+  display: flex;
+  align-items: center;
 }
 
 @media screen and (max-width: 480px) {
   .container {
     height: auto;
     flex-direction: column;
+    padding: 0;
   }
 
   .title,
   .linkTitle {
-    font-size: 30px;
+    font-size: 25px;
+  }
+  .linkText {
+    font-size: 15px;
   }
 
   .cardItem {
     text-align: center;
+    font-size: 20px;
   }
 }

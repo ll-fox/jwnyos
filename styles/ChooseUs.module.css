@@ -1,0 +1,84 @@
+/* CDN 服务仅供平台体验和调试使用，平台不承诺服务的稳定性，企业客户需下载字体包自行发布使用并做好备份。 */
+@font-face {
+  font-family: '站酷高端黑 Regular';
+  font-weight: 400;
+  src: url('//at.alicdn.com/wf/webfont/ElRqytIZ1zPa/LxWYyTsuUFD90n9LbNAiV.woff2')
+      format('woff2'),
+    url('//at.alicdn.com/wf/webfont/ElRqytIZ1zPa/-VRgmuTUor4EwTBd65217.woff')
+      format('woff');
+  font-display: swap;
+}
+.choose {
+  padding: 6em 0px;
+}
+.container {
+  padding: 0 5em;
+  margin-right: auto;
+  margin-left: auto;
+}
+.chooseTop {
+  text-align: center;
+}
+
+.heading h3 {
+  color: #c49b45;
+  font-size: 3.6em;
+  margin: 0;
+  font-family: serif;
+  font-weight: 800;
+  padding-bottom: 20px;
+}
+.choose-bottom {
+  margin-top: 3%;
+}
+.chooseBox {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+.chooseLeft {
+  width: 50%;
+  display: flex;
+  padding: 20px;
+}
+.cLeft {
+  width: 75%;
+}
+.cRight {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cLeft h4 {
+  font-family: Yuanti SC;
+  color: #c49b45;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 1.5em;
+  margin: 0;
+}
+.cLeft p {
+  font-size: 17px;
+  color: #959798;
+  line-height: 1.8em;
+  margin-top: 5px;
+  font-family: 'Poppins', sans-serif;
+}
+.avatar {
+  border-radius: 50%;
+  border: 7px solid #c49b45;
+}
+
+@media screen and (max-width: 480px) {
+  .choose {
+    padding: 2em 0px;
+  }
+  .container {
+    padding: 20px;
+  }
+  .chooseLeft {
+    width: 100%;
+  }
+}

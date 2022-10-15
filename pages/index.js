@@ -3,6 +3,7 @@ import Image from 'next/image'
 import Intro from '../components/Intro'
 import Services from '../components/Services'
 import Banner from '../components/Banner'
+import ChooseUs from '../components/ChooseUs'
 import HomeScroll from '../components/HomeScroll'
 import Carousel from '../components/Carousel'
 import styles from '../styles/Home.module.css'
@@ -18,13 +19,18 @@ export default function Home({ services }) {
           name="description"
           content="Web Design, App Development, Content Creation Agency Near Sweden"
         />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap"
+          rel="stylesheet"
+        />
       </Head>
       <Intro />
       {/* <HomeScroll /> */}
       {/* {<Carousel />} */}
       <Banner />
-      <Services services={services} />
-      <Testimonials />
+      {/* <Services services={services} /> */}
+      <ChooseUs />
+      {/* <Testimonials /> */}
     </div>
   )
 }

@@ -17,7 +17,8 @@
 }
 .welcome h1 {
   font-size: 30px;
-  font-family: 'Slabo27px-Regular';
+  font-family: Yuanti SC;
+  font-weight: 500;
 }
 .welcome p {
   font-size: 16px;
@@ -42,25 +43,31 @@
   width: 30%;
 }
 .workGrids h3 {
-  color: #f8c81a;
+  color: #c49b45;
   font-size: 35px;
 }
 .workGrids p {
   color: #777674;
-  font-size: 14px;
+  font-size: 16px;
   margin: 15px 0;
+  font-family: Yuanti SC;
 }
 .workGrids li {
   color: #4f4f4e;
-  font-size: 13px;
+  font-size: 15px;
   font-family: serif;
   margin: 15px 0;
 }
 .workGrids li span {
   color: #727170;
-  font-size: 15px;
+  font-size: 17px;
   font-weight: 600;
   margin-right: 15px;
+  font-family: Yuanti SC;
+}
+.workGrids li a {
+  color: #727170;
+  font-family: YouYuan;
 }
 @media (min-width: 480px) {
   .welcomeGrids {

@@ -5,12 +5,12 @@
 .title {
   width: max-content;
   font-size: 30px;
-  border-bottom: 4px solid #f8c81a;
+  border-bottom: 4px solid #c49b45;
 }
 
 .subtitle {
   font-size: 50px;
-  color: #f8c81a;
+  color: #c49b45;
 }
 
 .services {
@@ -20,7 +20,7 @@
 }
 
 .service {
-  width: 500px;
+  width: 50%;
   height: 500px;
   background-color: whitesmoke;
   padding: 10px;
