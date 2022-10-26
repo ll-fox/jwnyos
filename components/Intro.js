@@ -15,8 +15,8 @@ const Intro = () => {
         </h1>
         <div className={style.head}></div>
         <p className={style.desc}>
-          坐落于西北，一家致力于打造农产品供应链的公司<br></br>
-          出生于西北，一群致力于建设家乡的人
+          善为至宝， 一生用之不尽；心作良田， 百世耕之有余<br></br>
+          企业宗旨：利而不害 为而不争
         </p>
         {/* <button className={style.button}>DISCOVER</button> */}
       </div>

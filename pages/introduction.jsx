@@ -9,7 +9,7 @@ const Introduction = () => {
       <div className={styles.welcome}>
         <div className={styles.container}>
           <h1 className={styles.h1}>富平县金翁农业科技有限公司</h1>
-          <p>Fu Ping Xian Jin Weng Nong Ye Science& Technology Co Ltd </p>
+          <p>Fu Ping County JinWeng Agricultural Technology Co.,LTD </p>
           <div className={styles.welcomeInfo}>
             <div className={styles.welcomeGrids}>
               <Image src="/img/3.jpg" layout="fill" objectFit="cover" alt="" />
