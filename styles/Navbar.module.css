@@ -1,13 +1,16 @@
 .container {
-  height: 50px;
-  background-color: black;
+  height: 80px;
+  /* background-color: rgba(220, 20, 60, 0.5); */
+  position: fixed;
+  width: 100%;
   color: white;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-size: 18px;
+  font-size: 26px;
   padding: 0px 100px;
-  position: relative;
+  z-index: 999;
+  /* position: relative; */
   overflow: hidden;
 }
 .logo {
@@ -15,13 +18,29 @@
   height: 100%;
   position: relative;
 }
+.list {
+  height: 80px;
+}
 .listItem {
-  display: inline;
-  margin-right: 30px;
-  font-size: 14px;
-  /* font-weight: 300; */
-  color: lightgray;
+  display: inline-block;
+  padding: 0 20px;
+  font-size: 16px;
+  height: 80px;
+  margin: 0 20px;
+  line-height: 80px;
+  /* color: #fff; */
   cursor: pointer;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+}
+.select {
+  background: #c49b45;
+  color: #fff;
+}
+.listItem:hover {
+  background: #c49b45;
+  opacity: 0.8;
+  color: #fff;
 }
 .listItem a:hover {
   color: #fff;

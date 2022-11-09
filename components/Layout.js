@@ -1,6 +1,8 @@
-import styles from "../styles/Layout.module.css";
-import Footer from "./Footer";
-import Navbar from "./Navbar";
+import React, { useState, useEffect } from 'react'
+
+import styles from '../styles/Layout.module.css'
+import Footer from './Footer'
+import Navbar from './Navbar'
 
 const Layout = ({ children }) => {
   return (
@@ -8,10 +10,10 @@ const Layout = ({ children }) => {
       <>
         <Navbar />
         {children}
-        <Footer/>
+        <Footer />
       </>
     </div>
-  );
-};
+  )
+}
 
-export default Layout;
+export default Layout

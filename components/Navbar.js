@@ -1,20 +1,35 @@
-import { useState } from 'react'
+import { useState, useRef, useEffect } from 'react'
 import style from '../styles/Navbar.module.css'
 import Link from 'next/link'
 import Image from 'next/image'
 
 const Navbar = () => {
   const [open, setOpen] = useState(false)
+  let changeNav_box = useRef(null)
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll)
+    // handleScroll()
+  })
+  let handleScroll = function () {
+    const scrollY = window.scrollY
 
+    const opa = String(`rgba(255, 255, 255, ${(scrollY || 0) / 80})`)
+    changeNav_box.current.style.backgroundColor = opa
+    if (scrollY > 80) {
+      changeNav_box.current.style.color = '#c49b45'
+    } else {
+      changeNav_box.current.style.color = '#fff'
+    }
+  }
   return (
-    <div className={style.container}>
+    <div ref={changeNav_box} className={style.container}>
       <Link href="/">
         <div className={style.logo}>
           <Image src="/img/logo.png" layout="fill" objectFit="cover" alt="" />
         </div>
       </Link>
       <ul className={style.list}>
-        <li className={style.listItem}>
+        <li className={`${style.listItem} ${style.select}`}>
           <Link href="/">首页</Link>
         </li>
         <li className={style.listItem}>
