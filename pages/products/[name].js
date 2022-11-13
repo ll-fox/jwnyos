@@ -40,7 +40,6 @@ export const getStaticPaths = async () => {
       params: { name: item.name }
     }
   })
-  console.log(333, paths)
   return {
     paths,
     fallback: false
@@ -48,7 +47,6 @@ export const getStaticPaths = async () => {
 }
 
 export const getStaticProps = async (ctx) => {
-  console.log(1111, ctx)
   const name = ctx.params.name
   const product = data.filter((item) => item.name === name)[0]
   return {

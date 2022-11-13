@@ -1,42 +1,49 @@
 import style from '../styles/Footer.module.css'
 import Image from 'next/image'
 import Link from 'next/link'
+import { Tooltip } from 'antd'
 
 const Footer = () => {
   return (
     <div className={style.container}>
-      <div className={style.cardL}>
-        <h1 className={style.title}>欢迎联系我们.</h1>
-        <h1 className={style.linkTitle}>
-          <Link href="/contact" className={style.link} passHref>
-            <>
-              <span className={style.linkText}>PLEASE CONTACT US</span>
-              <Image src="/img/link.png" width="35px" height="35px" alt="" />
-            </>
-          </Link>
-        </h1>
+      <Link href="/">
+        <div className={style.logo}>
+          <Image src="/img/logo.png" layout="fill" objectFit="cover" alt="" />
+        </div>
+      </Link>
+      <ul className={style.list}>
+        <li className={style.listItem}>
+          <Link href="/">首页</Link>
+        </li>
+        <li className={style.listItem}>
+          <Link href="/introduction">公司简介</Link>
+        </li>
+        <li className={style.listItem}>
+          <Link href="/products/production">产品介绍</Link>
+        </li>
+        <li className={style.listItem}>
+          <Link href="/products/photography">公司规划</Link>
+        </li>
+        <li className={style.listItem}>
+          <Link href="/contact">联系我们</Link>
+        </li>
+      </ul>
+      <div className={style.title}>
+        Fu Ping County JinWeng Agricultural Technology Co.,LTD
       </div>
-      <div className={style.cardS}>
-        <div className={style.cardItem}>
+      <div className={style.infoIcon}>
+        <Tooltip title="15829000737">
           <Image src="/img/cho7.png" width="35px" height="35px" alt="" />
-          <span className={style.linkText}>15829000737</span>
-        </div>
-        <div className={style.cardItem}>
+        </Tooltip>
+        <Tooltip title="陕西省渭南市富平县曹村镇太白村一组">
           <Image src="/img/cho8.png" width="35px" height="35px" alt="" />
-          <span className={style.linkText}>
-            陕西省渭南市富平县曹村镇太白村一组
-          </span>
-        </div>
-      </div>
-      <div className={style.cardS}>
-        <div className={style.cardItem}>
+        </Tooltip>
+        <Tooltip title="yangyifan@jwny.onmicrosoft.com">
           <Image src="/img/cho9.png" width="35px" height="35px" alt="" />
-          <span className={style.linkText}>yangyifan@jwny.onmicrosoft.com</span>
-        </div>
-        <div className={style.cardItem}>
+        </Tooltip>
+        <Tooltip title="https://jwny.xyz">
           <Image src="/img/cho10.png" width="35px" height="35px" alt="" />
-          <span className={style.linkText}>https://jwny.xyz</span>
-        </div>
+        </Tooltip>
       </div>
     </div>
   )

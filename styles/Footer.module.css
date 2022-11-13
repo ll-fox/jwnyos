@@ -1,26 +1,62 @@
 .container {
-  /* height: 250px; */
-  border-top: 3px solid black;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
+  background-color: rgb(46, 45, 45);
   font-size: 18px;
-  padding: 0 50px;
+  padding: 0 200px;
+}
+
+.logo {
+  width: 25%;
+  height: 80px;
+  position: relative;
+  margin: 20px auto;
+}
+.list {
+  height: 50px;
+  border-top: 1px solid rgb(113, 111, 111);
+  border-bottom: 1px solid rgb(88, 87, 87);
+  display: flex;
+  justify-content: center;
+}
+.listItem {
+  display: inline-block;
+  padding: 0 20px;
+  font-size: 12px;
+  margin: 0 20px;
+  line-height: 50px;
+  color: #fff;
+  cursor: pointer;
+  /* font-weight: 500; */
+  font-family: 文道雅圆体;
+}
+.listItem:hover {
+  color: #c49b45;
 }
 
 .title {
+  margin: 0 auto;
   font-weight: 400;
   color: white;
-  background-color: #c49b45;
-  width: max-content;
+  text-align: center;
+  /* width: max-content; */
+  font-family: cursive;
   padding: 5px;
-  margin: 20px;
+  margin: 30px auto;
   transition: all 1s ease;
 }
 
 .title:hover {
-  background-color: white;
+  /* background-color: white; */
   color: #c49b45;
+}
+.infoIcon {
+  margin: 20px auto;
+  padding-bottom: 30px;
+  width: 30%;
+  display: flex;
+  justify-content: space-around;
+}
+.infoIcon img {
+  margin: 30px;
 }
 
 .linkTitle {
@@ -51,6 +87,7 @@
 }
 
 .cardS {
+  margin: 50px auto;
   flex: 1;
 }
 

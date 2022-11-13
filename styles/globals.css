@@ -1,3 +1,33 @@
+@font-face {
+  font-family: 'SourceHanSerifSC';
+  src: url('/fonts/SourceHanSerifSC-Bold.otf') format('truetype');
+  font-style: normal;
+}
+@font-face {
+  font-family: 'HarmonyOS_Sans_SC';
+  src: url('/fonts/HarmonyOS_Sans_SC_Bold.ttf') format('truetype');
+  font-style: normal;
+}
+@font-face {
+  font-family: 'writtenson-ezldo';
+  src: url('/fonts/writtenson-ezldo.ttf') format('truetype');
+  font-style: normal;
+}
+@font-face {
+  font-family: 'shangshouyueyati';
+  src: url('/fonts/shangshouyueyati.ttf') format('truetype');
+  font-style: normal;
+}
+@font-face {
+  font-family: '上首矩正体';
+  src: url('/fonts/上首矩正体.ttf') format('truetype');
+  font-style: normal;
+}
+@font-face {
+  font-family: '汉仪润圆-65';
+  src: url('/fonts/汉仪润圆-65.ttf') format('truetype');
+  font-style: normal;
+}
 html,
 body {
   padding: 0;

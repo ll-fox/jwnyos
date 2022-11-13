@@ -4,11 +4,12 @@ import styles from '../styles/Introduction.module.css'
 
 const Introduction = () => {
   return (
-    <div>
+    <div style={{ paddingTop: '80px' }}>
       <div className={styles.carousel}>{<Carousel />}</div>
       <div className={styles.welcome}>
         <div className={styles.container}>
           <h1 className={styles.h1}>富平县金翁农业科技有限公司</h1>
+          <div className={styles.across}></div>
           <p>Fu Ping County JinWeng Agricultural Technology Co.,LTD </p>
           <div className={styles.welcomeInfo}>
             <div className={styles.welcomeGrids}>

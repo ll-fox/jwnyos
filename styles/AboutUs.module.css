@@ -1,0 +1,42 @@
+.container {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+}
+.info {
+  text-align: center;
+}
+.across {
+  width: 60px;
+  height: 2px;
+  margin: 0px auto;
+  border-radius: 1px;
+  background-color: #c49b45;
+}
+.pic {
+  margin: 40px auto;
+  overflow: hidden;
+  position: relative;
+  width: 400px;
+  height: 300px;
+  box-shadow: 0 0 10px 10px #fff;
+  box-shadow: 0 0 10px 10px #fff inset;
+}
+.pic:after {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+  box-shadow: 0 0 10px 10px #fff inset;
+}
+.subtitle {
+  margin: 40px auto;
+  width: 80%;
+  font-size: 15px;
+  color: #3c3b3b;
+}

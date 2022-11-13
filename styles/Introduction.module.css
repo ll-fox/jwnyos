@@ -6,6 +6,7 @@
   padding: 0 70px;
 }
 .welcomeInfo {
+  margin: 50px;
   display: flex;
 }
 .welcomeGrids {
@@ -24,12 +25,20 @@
   font-size: 16px;
   line-height: 40px;
 }
+.across {
+  width: 60px;
+  height: 2px;
+  margin: 0px auto;
+  border-radius: 1px;
+  background-color: #c49b45;
+}
 .content {
   margin: 100px 0;
 }
 .work {
   width: 100%;
   /* height: 500px; */
+  margin: 100px 0;
   display: flex;
 }
 .workImg {

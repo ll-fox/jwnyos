@@ -1,21 +1,22 @@
 .bannerBottom {
   background: url(/img/bg.png) no-repeat 0px 0px fixed;
   background-size: cover;
+  height: 80vh;
   padding: 2em 0 6rem;
 }
+
 .bannerBottom h2 {
   font-size: 3.5em;
   margin-top: 1em;
   font-family: 'Songti SC';
   line-height: 1em;
   font-weight: 800;
-  color: #c49b45;
+  color: #fff;
 }
 .bannerBottom p {
   font-size: 1.5em;
-  margin-top: 1.5em;
+  margin: 80px;
   color: #fff;
-  font-family: Yuanti SC;
   line-height: 1.6em;
 }
 .bannerBottom h4 {
@@ -24,10 +25,28 @@
   letter-spacing: -1px;
 }
 .container {
+  text-align: center;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+}
+.across {
+  width: 60px;
+  height: 2px;
+  margin: 0px auto;
+  border-radius: 1px;
+  background-color: #c49b45;
+}
+.btn {
+  margin: 50px auto;
+  width: 200px;
+  height: 50px;
+  background-color: #c49b45;
+  line-height: 50px;
+  font-size: 20px;
+  color: #fff;
+  cursor: pointer;
 }
 @media (min-width: 768px) {
   .container {
@@ -41,6 +60,6 @@
 }
 @media (min-width: 1200px) {
   .container {
-    width: 1170px;
+    width: 970px;
   }
 }

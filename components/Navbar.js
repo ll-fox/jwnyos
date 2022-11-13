@@ -1,24 +1,33 @@
-import { useState, useRef, useEffect } from 'react'
+import { useState, useRef, useEffect, useContext } from 'react'
+import MyContext from '../lib/context'
+import { useRouter } from 'next/router'
+
 import style from '../styles/Navbar.module.css'
 import Link from 'next/link'
 import Image from 'next/image'
 
 const Navbar = () => {
   const [open, setOpen] = useState(false)
+  const { tab, setTab } = useContext(MyContext)
+  const { pathname, asPath } = useRouter()
   let changeNav_box = useRef(null)
   useEffect(() => {
     window.addEventListener('scroll', handleScroll)
-    // handleScroll()
+    handleScroll()
   })
   let handleScroll = function () {
     const scrollY = window.scrollY
-
-    const opa = String(`rgba(255, 255, 255, ${(scrollY || 0) / 80})`)
-    changeNav_box.current.style.backgroundColor = opa
-    if (scrollY > 80) {
+    if (asPath !== '/') {
       changeNav_box.current.style.color = '#c49b45'
+      changeNav_box.current.style.backgroundColor = 'rgba(255, 255, 255, 1)'
     } else {
-      changeNav_box.current.style.color = '#fff'
+      const opa = String(`rgba(255, 255, 255, ${(scrollY || 0) / 80})`)
+      changeNav_box.current.style.backgroundColor = opa
+      if (scrollY > 80) {
+        changeNav_box.current.style.color = '#c49b45'
+      } else {
+        changeNav_box.current.style.color = '#fff'
+      }
     }
   }
   return (
@@ -29,19 +38,35 @@ const Navbar = () => {
         </div>
       </Link>
       <ul className={style.list}>
-        <li className={`${style.listItem} ${style.select}`}>
+        <li className={`${style.listItem} ${pathname === '/' && style.select}`}>
           <Link href="/">首页</Link>
         </li>
-        <li className={style.listItem}>
+        <li
+          className={`${style.listItem} ${
+            pathname === '/introduction' && style.select
+          }`}
+        >
           <Link href="/introduction">公司简介</Link>
         </li>
-        <li className={style.listItem}>
+        <li
+          className={`${style.listItem} ${
+            pathname === '/products/production' && style.select
+          }`}
+        >
           <Link href="/products/production">产品介绍</Link>
         </li>
-        <li className={style.listItem}>
+        <li
+          className={`${style.listItem} ${
+            pathname === '/products/photography' && style.select
+          }`}
+        >
           <Link href="/products/photography">公司规划</Link>
         </li>
-        <li className={style.listItem}>
+        <li
+          className={`${style.listItem} ${
+            pathname === '/contact' && style.select
+          }`}
+        >
           <Link href="/contact">联系我们</Link>
         </li>
       </ul>
