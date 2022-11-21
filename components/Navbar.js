@@ -50,18 +50,18 @@ const Navbar = () => {
         </li>
         <li
           className={`${style.listItem} ${
-            pathname === '/products/production' && style.select
+            pathname === '/product' && style.select
           }`}
         >
-          <Link href="/products/production">产品介绍</Link>
+          <Link href="/product">产品介绍</Link>
         </li>
-        <li
+        {/* <li
           className={`${style.listItem} ${
             pathname === '/products/photography' && style.select
           }`}
         >
           <Link href="/products/photography">公司规划</Link>
-        </li>
+        </li> */}
         <li
           className={`${style.listItem} ${
             pathname === '/contact' && style.select

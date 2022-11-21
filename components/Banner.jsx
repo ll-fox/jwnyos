@@ -15,7 +15,7 @@ const Banner = () => {
           </p>
         </div>
         <div className={styles.btn}>
-          <Link href="/introduction">
+          <Link href="/product">
             <div className={styles.btn}>产品介绍</div>
           </Link>
         </div>

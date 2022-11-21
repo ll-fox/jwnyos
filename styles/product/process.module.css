@@ -1,0 +1,32 @@
+.container {
+  position: relative;
+  border-top: 2px solid #ccc;
+  display: flex;
+  margin: 0 5%;
+  padding: 5% 0;
+}
+.left {
+  width: 40%;
+  height: 400px;
+  overflow: hidden;
+  position: relative;
+  margin-right: 40px;
+}
+.right {
+  padding: 30px;
+  position: relative;
+  width: 50%;
+}
+.across {
+  width: 50px;
+  height: 2px;
+  border-radius: 1px;
+  background-color: #c49b45;
+  position: absolute;
+  bottom: 10px;
+}
+.text {
+  font-size: 16px;
+  line-height: 30px;
+}
+

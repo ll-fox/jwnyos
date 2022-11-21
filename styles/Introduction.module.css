@@ -3,7 +3,8 @@
   margin: 40px;
 }
 .container {
-  padding: 0 70px;
+  padding: 30px 70px;
+  border-bottom: 2px solid #ccc;
 }
 .welcomeInfo {
   margin: 50px;
@@ -28,7 +29,7 @@
 .across {
   width: 60px;
   height: 2px;
-  margin: 0px auto;
+  margin: 30px auto;
   border-radius: 1px;
   background-color: #c49b45;
 }

@@ -13,17 +13,6 @@ import Testimonials from '../components/Testimonials'
 export default function Home({ services }) {
   return (
     <div>
-      <Head>
-        <title>金翁农业</title>
-        <meta
-          name="description"
-          content="Web Design, App Development, Content Creation Agency Near Sweden"
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;900&display=swap"
-          rel="stylesheet"
-        />
-      </Head>
       <Intro />
       <AboutUs />
       {/* {<Carousel />} */}

@@ -28,6 +28,11 @@
   src: url('/fonts/汉仪润圆-65.ttf') format('truetype');
   font-style: normal;
 }
+@font-face {
+  font-family: '汉呈王世李行书';
+  src: url('/fonts/汉呈王世李行书.ttf') format('truetype');
+  font-style: normal;
+}
 html,
 body {
   padding: 0;
