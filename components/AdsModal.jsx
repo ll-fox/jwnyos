@@ -1,7 +1,6 @@
 import React, { useRef, useEffect, useMemo, useState } from 'react'
-import { createPortal } from 'react-dom'
-import Link from 'next/link'
 import style from '../styles/AdsModal.module.css'
+import Link from 'next/link'
 
 
 
