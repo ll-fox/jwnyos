@@ -1,0 +1,54 @@
+.dialog {
+
+}
+.H-Dialog-overview {
+  /* 设置弹框背景以及无法点击页面*/
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1001;
+  background-color: rgba(0, 0,0,0.6);
+  display: flex;
+  justify-content: center;
+  
+}
+.H-Dialog-inner {
+  height: 620px;
+  width: 350px;
+  background-color: #fff;
+  position: absolute;
+  top: 10vh;
+  padding: 20px;
+}
+.dialog-header {
+  margin-bottom: 10px;
+}
+.dialog-body{
+
+}
+.dialog-footer {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  margin: auto;
+  text-align: center;
+  
+}
+.btn{
+    width: 60%;
+    height: 60px;
+    margin: 0 auto;
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    margin-left: -30%;
+    background-color: #c49b45;
+    color: #fff;
+    line-height: 60px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+}
+
