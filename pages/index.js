@@ -7,7 +7,7 @@ import Banner from '../components/Banner'
 import ChooseUs from '../components/ChooseUs'
 import HomeScroll from '../components/HomeScroll'
 import AboutUs from '../components/AboutUs'
-import AdsModal from '../components/AdsModal'
+import Modal from '../components/Modal'
 import styles from '../styles/Home.module.css'
 import { data } from '../data'
 import Testimonials from '../components/Testimonials'
@@ -24,7 +24,7 @@ export default function Home({ services }) {
       {/* <Services services={services} /> */}
       <ChooseUs />
       {/* <Testimonials /> */}
-      <AdsModal
+      <Modal
         visible={visible}
         title={
           <>
@@ -52,7 +52,7 @@ export default function Home({ services }) {
             </button>
           </>
         }
-      ></AdsModal>
+      />
     </div>
   )
 }

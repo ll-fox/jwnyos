@@ -1,8 +1,8 @@
 import React, { useRef, useEffect, useMemo, useState } from 'react'
 import Link from 'next/link'
-import styles from '../styles/AdsModal.module.css'
+import styles from '../styles/Modal.module.css'
 
-function AdsModal(props) {
+function Modal(props) {
   const { visible = false, title, children, footer } = props
   const ref = useRef()
   useEffect(() => {
@@ -40,4 +40,4 @@ function AdsModal(props) {
   )
 }
 
-export default AdsModal
+export default Modal
