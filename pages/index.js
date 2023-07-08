@@ -24,7 +24,7 @@ export default function Home({ services }) {
       {/* <Services services={services} /> */}
       <ChooseUs />
       {/* <Testimonials /> */}
-      <Modal
+      {/* <Modal
         visible={visible}
         title={
           <>
@@ -52,7 +52,7 @@ export default function Home({ services }) {
             </button>
           </>
         }
-      />
+      /> */}
     </div>
   )
 }
