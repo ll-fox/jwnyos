@@ -21,13 +21,15 @@ const Navbar = () => {
       changeNav_box.current.style.color = '#c49b45'
       changeNav_box.current.style.backgroundColor = 'rgba(255, 255, 255, 1)'
     } else {
-      const opa = String(`rgba(255, 255, 255, ${(scrollY || 0) / 80})`)
-      changeNav_box.current.style.backgroundColor = opa
-      if (scrollY > 80) {
-        changeNav_box.current.style.color = '#c49b45'
-      } else {
-        changeNav_box.current.style.color = '#fff'
-      }
+      changeNav_box.current.style.color = '#c49b45'
+      changeNav_box.current.style.backgroundColor = 'rgba(255, 255, 255, 0)'
+      // const opa = String(`rgba(255, 255, 255, ${(scrollY || 0) / 80})`)
+      // changeNav_box.current.style.backgroundColor = opa
+      // if (scrollY > 80) {
+      //   changeNav_box.current.style.color = '#c49b45'
+      // } else {
+      //   changeNav_box.current.style.color = '#fff'
+      // }
     }
   }
   return (

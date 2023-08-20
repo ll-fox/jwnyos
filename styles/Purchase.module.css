@@ -1,0 +1,52 @@
+.container{
+    position: relative;
+    top: 15%;
+    height: 100%;
+}
+.title {
+  display: flex;
+  position: relative;
+  height: 50px;
+  margin:  0 20%;
+}
+
+.title:before,.title:after {
+    position: relative;
+    right: 25px;
+    content: "";
+    flex: 1 1;
+    border-bottom: 1.5px dashed #c59c43;
+    margin: auto;
+}
+.title:after {
+    left: 25px;
+}
+
+.purchase{
+    font-size: larger;
+    color: #999;
+    font-family: 汉仪润圆-65;
+    margin: 5%;
+}
+
+.imgContent{
+    display: flex;
+    justify-content: space-around;
+    height: 60%;
+}
+.img{
+    width: 30%;
+    /* padding: 30px; */
+    height: 0;
+    height: 30%;
+    position: relative;
+    cursor: pointer;
+}
+.text{
+    position: relative;
+    bottom: -100%;
+    font-size: 30px;
+    color: #999;
+    line-height: 3;
+    font-family: '汉仪润圆-65';
+}

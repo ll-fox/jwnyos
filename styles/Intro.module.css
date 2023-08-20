@@ -29,11 +29,15 @@
 .brandName {
   color: #fff;
   font-weight: 800;
+  opacity: 0;  /* 初始时设置透明度为0，即隐藏文本 */
+  animation: fade-in 1s ease-in-out forwards
 }
+
 .littleName {
   font-size: 30px;
   font-family: writtenson-ezldo;
   font-weight: 200;
+  animation: fade-in 2s ease-in-out forwards
 }
 .slogan {
   display: block;
@@ -41,6 +45,12 @@
   font-family: '汉仪润圆-65';
   font-size: 23px;
   font-weight: 600;
+  opacity: 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: slide-up 1s ease-in-out forwards;
 }
 
 .desc {
@@ -133,5 +143,33 @@
 
   .desc {
     display: none;
+  }
+}
+
+
+.fade-in-text {
+  /* 设置动画属性 */
+  animation: fade-in 1s ease-in;
+  /* 设置过渡效果 */
+  transition: opacity 1s ease-in;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slide-up {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
