@@ -1,9 +1,8 @@
 /** @type {import('next').NextConfig} */
+const withLess = require('next-with-less')
+
 const nextConfig = {
   webpack(config, options) {
-    // config.node = {
-    //     fs: "empty",
-    // };
     config.module.rules.push({
       test: /\.(png|woff|woff2|eot|ttf|otf)$/,
       use: [
@@ -18,7 +17,6 @@ const nextConfig = {
     return config
   },
   reactStrictMode: true,
-  swcMinify: true,
   images: {
     loader: 'akamai',
     path: '',
@@ -26,4 +24,8 @@ const nextConfig = {
   }
 }
 
-module.exports = nextConfig
+module.exports = withLess(nextConfig, {
+  lessOptions: {
+    modifyVars: { '@primary-color': '#1890ff' },
+  }
+})

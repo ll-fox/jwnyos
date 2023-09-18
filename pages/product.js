@@ -1,16 +1,22 @@
-import Header from '../components/product/header'
 import Process from '../components/product/process'
 import Card from '../components/product/card'
 import Link from 'next/link'
+import ProductBanner from '../components/ProductBanner'
+import ProductContent from '../components/ProductContent'
 import style from '../styles/product/index.module.css'
 
 
 export default function Product() {
   return (
     <div style={{ paddingTop: '80px' }}>
-      <Header />
-      <Card/>
-      <Process
+      <div>
+        <ProductBanner />
+      </div>
+      <div>
+        <ProductContent />
+        <Card />
+      </div>
+      {/* <Process
         index={1}
         title="采摘"
         content={
@@ -33,8 +39,8 @@ export default function Product() {
             在过去都是用手工的方法去皮，但是现在多数是机械去皮了。而如果是自己制作柿子，拿就得用刀来削皮了，在操作的过程中要记住去皮要干净，同时要薄且均匀。削下来的皮可不要扔掉了哦，在后面出霜的时候还要用到它的。
           </span>
         }
-      />
-      <Process
+      /> */}
+      {/* <Process
         index={3}
         title="自然晾晒"
         content={
@@ -80,7 +86,7 @@ export default function Product() {
             只要把两个柿饼的蒂部朝外，然后把柿子放在干净的容器里面，一般是先放一些之前的晒干的柿子皮，然后放一层柿饼，再放一些柿子皮。如此反复不停地放，直到把所有的柿饼都放进去了。最后把容器密封好，放置在阴凉的地方捂霜就可以了。这个过程主要是要控制温度，一般阅读越低对上霜越有利。
           </span>
         }
-      />
+      /> */}
       <div className={style.btn}>
         <Link href="/contact">
           <div className={style.btn}>联系我们</div>

@@ -1,11 +1,14 @@
 import Carousel from '../components/Carousel'
+import Header from '../components/product/header'
+import Card from '../components/product/card'
 import Image from 'next/image'
 import styles from '../styles/Introduction.module.css'
 
 const Introduction = () => {
   return (
     <div style={{ paddingTop: '80px' }}>
-      <div className={styles.carousel}>{<Carousel />}</div>
+      <Header />
+      {/* <div className={styles.carousel}>{<Carousel />}</div> */}
       <div className={styles.welcome}>
         <div className={styles.container}>
           <h1 className={styles.h1}>富平县金翁农业科技有限公司</h1>
@@ -103,7 +106,7 @@ const Introduction = () => {
           </div>
           <div className={styles.workImg}>
             <Image
-              src="/img/user2.jpeg"
+              src="/img/bg3.jpeg"
               layout="fill"
               objectFit="cover"
               alt=""

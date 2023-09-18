@@ -3,7 +3,7 @@ import MyContext from '../lib/context'
 import Head from 'next/head'
 import { useEffect, useState } from 'react'
 import 'antd/dist/antd.css'
-import '../styles/globals.css'
+import '../styles/globals.less'
 
 function MyApp({ Component, pageProps }) {
   const [tab, setTab] = useState(null)
