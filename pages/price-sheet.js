@@ -78,17 +78,18 @@ const PriceSheet = (props) => {
 	const [isDsable, setIsDsable] = useState(false)
 	const [fileList, setFileList] = useState(newData?.material || [])
 	const [loading, setLoading] = useState(false)
+
+  const handleChange = ({ file, fileList: newFileList }) => {
+    file.status = 'uploading'
+    setIsDsable(true)
+    return setFileList([...newFileList])
+  }
+
   const normFile = (e) => {
     if (Array.isArray(e)) {
       return e
     }
     return e?.fileList.map((item) => item.originFileObj)
-  }
-
-  const handleChange = ({ file, fileList: newFileList }) => {
-    file.status = 'uploading'
-    setIsDsable(true)
-    return setFileList(newFileList)
   }
   const beforeUpload = async (file) => {
     if (!file.url && !file.preview) {
@@ -117,7 +118,7 @@ const PriceSheet = (props) => {
     console.log('Success:', values)
 		const rangeValue = values['period']
 		setLoading(true)
-    values.material = (values?.material || []).map((item) => item.url)
+    values.material = (fileList || []).map((item) => item.url)
 		values.period = [rangeValue[0].format('YYYY-MM-DD'), rangeValue[1].format('YYYY-MM-DD')]
     console.log('Success:', values)
 
@@ -230,7 +231,6 @@ const PriceSheet = (props) => {
             <Form.Item
               name="material"
               label="规格信息"
-              // valuePropName="fileList"
               getValueFromEvent={normFile}
               rules={[
                 {
