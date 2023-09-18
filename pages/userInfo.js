@@ -175,11 +175,11 @@ const UserInfo = (props) => {
               {
                 type: 'string',
                 required: true,
-                message: '请填写公司或姓名!'
+                message: '请填写姓名!'
               }
             ]}
           >
-            <Input placeholder="如王先生" />
+            <Input placeholder="例：王先生" />
           </Form.Item>
           <Form.Item
             name="phone"
@@ -192,7 +192,7 @@ const UserInfo = (props) => {
               }
             ]}
           >
-            <Input placeholder="如微信号/手机号" />
+            <Input placeholder="微信号/手机号" />
           </Form.Item>
           <Form.Item
             name="company"
@@ -205,7 +205,7 @@ const UserInfo = (props) => {
               }
             ]}
           >
-            <Input placeholder="如金翁农业科技有限公司" />
+            <Input placeholder="例：金翁农业科技有限公司" />
           </Form.Item>
           <Form.Item
             name="email"
@@ -226,7 +226,13 @@ const UserInfo = (props) => {
             <TextArea />
           </Form.Item>
           <Form.Item wrapperCol={{ offset: 18, span: 1 }}>
-            <Button size="large" shape="round" type="primary" htmlType="submit">
+            <Button
+              disabled={isDsable}
+              size="large"
+              shape="round"
+              type="primary"
+              htmlType="submit"
+            >
               提交
             </Button>
           </Form.Item>

@@ -101,7 +101,7 @@ const PriceSheet = (props) => {
         file.status = 'done'
         setIsDsable(false)
         file.url = value.url()
-        setFileList([file])
+        setFileList([...fileList,file])
         return true
       },
       (error) => {
@@ -151,112 +151,118 @@ const PriceSheet = (props) => {
       <div className={style.container}>
         <h1 className={style.title}>非常感谢您选择金翁农业</h1>
         <p>请填写您的报价信息</p>
-        <Form
-          form={form}
-          name="time_related_controls"
-          labelCol={{ span: 8 }}
-          wrapperCol={{ span: 12 }}
-          initialValues={newData}
-          preserve={false}
-          style={{
-            // height: '450px',
-            padding: '30px 0',
-            width: '90%',
-            overflow: 'auto'
-          }}
-          onFinish={onFinish}
-          onFinishFailed={onFinishFailed}
-          autoComplete="off"
-        >
-          <Form.Item
-            name="ProductName"
-            label="产品名称"
-            rules={[
-              {
-                type: 'string',
-                required: true,
-                message: '请输入产品名称!'
-              }
-            ]}
+        <ConfigProvider locale={zh_CN}>
+          <Form
+            form={form}
+            name="time_related_controls"
+            labelCol={{ span: 8 }}
+            wrapperCol={{ span: 12 }}
+            initialValues={newData}
+            preserve={false}
+            style={{
+              // height: '450px',
+              padding: '30px 0',
+              width: '90%',
+              overflow: 'auto'
+            }}
+            onFinish={onFinish}
+            onFinishFailed={onFinishFailed}
+            autoComplete="off"
           >
-            <Input placeholder="3546789" />
-          </Form.Item>
-          <Form.Item name="period" label="产品周期" {...rangeConfig}>
-            <ConfigProvider locale={zh_CN}>
-              <DatePicker.RangePicker />
-            </ConfigProvider>
-          </Form.Item>
-          <Form.Item
-            name="address"
-            label="仓库详细地址(具体到镇）"
-            rules={[
-              {
-                type: 'string',
-                required: true,
-                message: '请输入仓库详细地址!'
-              }
-            ]}
-          >
-            <Input />
-          </Form.Item>
-          <Form.Item
-            name="name"
-            label="打单发货人员姓名"
-            rules={[
-              {
-                type: 'string',
-                required: true,
-                message: '请输入打单发货人员姓名!'
-              }
-            ]}
-          >
-            <Input />
-          </Form.Item>
-          <Form.Item
-            name="phone"
-            label="打单发货人员电话"
-            rules={[
-              {
-                type: 'string',
-                required: true,
-                message: '请输入打单发货人员电话!'
-              }
-            ]}
-          >
-            <Input />
-          </Form.Item>
-          <Form.Item name="remark" label="备注">
-            <TextArea />
-          </Form.Item>
-          <Form.Item
-            name="material"
-            label="规格信息"
-            // valuePropName="fileList"
-            getValueFromEvent={normFile}
-            rules={[
-              {
-                type: 'array',
-                required: true,
-                message: '请上传规格信息!'
-              }
-            ]}
-          >
-            <Upload
-              listType="picture"
-              maxCount={1}
-              fileList={fileList}
-              onChange={handleChange}
-              beforeUpload={beforeUpload}
+            <Form.Item
+              name="ProductName"
+              label="产品名称"
+              rules={[
+                {
+                  type: 'string',
+                  required: true,
+                  message: '请输入产品名称!'
+                }
+              ]}
             >
-              <Button icon={<UploadOutlined />}>点击上传</Button>
-            </Upload>
-          </Form.Item>
-          <Form.Item wrapperCol={{ offset: 18, span: 1 }}>
-            <Button size="large" shape="round" type="primary" htmlType="submit">
-              提交
-            </Button>
-          </Form.Item>
-        </Form>
+              <Input placeholder="例：富平柿饼" />
+            </Form.Item>
+            <Form.Item name="period" label="产品周期" {...rangeConfig}>
+              <DatePicker.RangePicker />
+            </Form.Item>
+            <Form.Item
+              name="address"
+              label="仓库详细地址(具体到镇）"
+              rules={[
+                {
+                  type: 'string',
+                  required: true,
+                  message: '请输入仓库详细地址!'
+                }
+              ]}
+            >
+              <Input placeholder="例：陕西省富平县曹村镇" />
+            </Form.Item>
+            <Form.Item
+              name="name"
+              label="打单发货人员姓名"
+              rules={[
+                {
+                  type: 'string',
+                  required: true,
+                  message: '请输入打单发货人员姓名!'
+                }
+              ]}
+            >
+              <Input />
+            </Form.Item>
+            <Form.Item
+              name="phone"
+              label="打单发货人员电话"
+              rules={[
+                {
+                  type: 'string',
+                  required: true,
+                  message: '请输入打单发货人员电话!'
+                }
+              ]}
+            >
+              <Input />
+            </Form.Item>
+            <Form.Item name="remark" label="备注">
+              <TextArea />
+            </Form.Item>
+            <Form.Item
+              name="material"
+              label="规格信息"
+              // valuePropName="fileList"
+              getValueFromEvent={normFile}
+              rules={[
+                {
+                  type: 'array',
+                  required: true,
+                  message: '请上传规格信息!'
+                }
+              ]}
+            >
+              <Upload
+                listType="picture"
+                maxCount={5}
+                fileList={fileList}
+                onChange={handleChange}
+                beforeUpload={beforeUpload}
+              >
+                <Button icon={<UploadOutlined />}>点击上传</Button>
+              </Upload>
+            </Form.Item>
+            <Form.Item wrapperCol={{ offset: 18, span: 1 }}>
+              <Button
+                disabled={isDsable}
+                size="large"
+                shape="round"
+                type="primary"
+                htmlType="submit"
+              >
+                提交
+              </Button>
+            </Form.Item>
+          </Form>
+        </ConfigProvider>
       </div>
     </Spin>
   )
