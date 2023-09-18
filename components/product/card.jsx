@@ -7,33 +7,33 @@ const Card = () => {
   const productList = [
     {
       url: '/img/9303.jpg',
-      title: '阎良甜瓜',
-      specification: '4.7-5.2斤阎良甜瓜'
+      title: '富平柿饼',
+      specification: '世界最优柿饼，甜甜蜜蜜'
+    },
+    {
+      url: '/img/4.jpg',
+      title: '大荔冬枣',
+      specification: '3-4斤，香香脆脆'
+    },
+    {
+      url: '/img/mqmg.png',
+      title: '民勤蜜瓜',
+      specification: '5.5-6斤，香甜可口'
     },
     {
       url: '/img/ygmg.png',
-      title: '阎良甜瓜',
-      specification: '4.7-5.2斤阎良甜瓜'
+      title: '阳光玫瑰',
+      specification: '玫瑰香味，鲜脆多汁'
     },
     {
-      url: '/img/9303.jpg',
-      title: '阎良甜瓜',
-      specification: '4.7-5.2斤阎良甜瓜'
+      url: '/img/csz.png',
+      title: '脆柿子',
+      specification: '色泽鲜艳，味甜汁多'
     },
     {
-      url: '/img/tiangua1.png',
+      url: '/img/yltg.png',
       title: '阎良甜瓜',
-      specification: '4.7-5.2斤'
-    },
-    {
-      url: '/img/tiangua1.png',
-      title: '阎良甜瓜',
-      specification: '4.7-5.2斤'
-    },
-    {
-      url: '/img/tiangua1.png',
-      title: '阎良甜瓜',
-      specification: '4.7-5.2斤'
+      specification: '绵绵瓜瓞，历史悠久'
     }
   ]
   return (
