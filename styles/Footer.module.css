@@ -44,6 +44,9 @@
   margin: 30px auto;
   transition: all 1s ease;
 }
+.recordNumber{
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
 
 .title:hover {
   /* background-color: white; */
