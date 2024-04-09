@@ -32,8 +32,8 @@ const Footer = () => {
         Fu Ping County JinWeng Agricultural Technology Co.,LTD
       </div>
       <div className={`${style.title} ${style.recordNumber}`}>
-        <Link href="https://beian.mps.gov.cn/#/query/webSearch" target="_blank">
-          <a href="https://beian.mps.gov.cn/#/query/webSearch" target="_blank" rel="noreferrer">
+        <Link href="https://beian.miit.gov.cn/" target="_blank">
+          <a href="https://beian.miit.gov.cn/" target="_blank" rel="noreferrer">
             陕ICP备2023013467号
           </a>
         </Link>
