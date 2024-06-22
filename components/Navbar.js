@@ -83,22 +83,16 @@ const Navbar = () => {
         style={{ right: open ? '0px' : '-50vw' }}
       >
         <li className={style.menuItem}>
-          <Link href="/">HOME</Link>
+          <Link href="/">首页</Link>
         </li>
         <li className={style.menuItem}>
-          <Link href="/products/design">DESIGN</Link>
+          <Link href="/introduction">公司简介</Link>
         </li>
         <li className={style.menuItem}>
-          <Link href="/products/development">DEVELOPMENT</Link>
+          <Link href="/product">产品介绍</Link>
         </li>
         <li className={style.menuItem}>
-          <Link href="/products/production">PRODUCTION</Link>
-        </li>
-        <li className={style.menuItem}>
-          <Link href="/products/photography">PHOTOGRAPHY</Link>
-        </li>
-        <li className={style.menuItem}>
-          <Link href="/contact">CONTACT</Link>
+          <Link href="/contact">联系我们</Link>
         </li>
       </ul>
     </div>

@@ -88,7 +88,7 @@ export default function Manipulation() {
           '--swiper-pagination-bottom': '0px',
           height: '40%',
           width: '80%',
-          marginTop: '15%',
+          marginTop: '150px',
           paddingBottom: '20px'
         }}
       >

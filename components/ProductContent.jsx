@@ -20,7 +20,7 @@ const ProductContent = () => {
             除富平柿饼外，近两年我们积极对其他品类进行拓展，并取得了极大的成功，取得了不错的销售额。我们致力于深入产地，严格把控产品质量，为线下，以及线上用户提供最优质地服务。
           </div>
           <div className={style.chart}>
-            <Image src="/img/tb.png" layout="fill" objectFit="contain" alt="" />
+            <Image src="/img/tb.png" layout="fill" objectFit="cover" alt="" />
             <div className={style.sell}>2022年销售额</div>
           </div>
         </div>

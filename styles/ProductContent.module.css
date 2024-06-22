@@ -59,3 +59,26 @@
     font-size: 25px;
     color: #ccc;
 }
+
+@media (max-width: 480px) {
+  .container{
+    padding: 10px;
+    height: calc(100vh - 100px);
+  }
+  .etitle{
+    display: block;
+  }
+  .content{
+    display: block;
+  }
+  .text, .chart{
+    width: 90%;
+    height: auto;
+    position: relative;
+  }
+  .chart{
+    height: 230px;
+    right: 0;
+    margin: 0 auto;
+  }
+}

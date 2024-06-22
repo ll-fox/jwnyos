@@ -73,3 +73,20 @@
 	text-indent: 0px;
 	font-family: 汉仪润圆-65;
 }
+@media (max-width: 480px) {
+  .bg{
+    height: 60vh;
+  }
+  .overlay{
+    height: 70%;
+  }
+  .title{
+    font-size: 50px;
+    top: 15%;
+  }
+  .content{
+    width: 90%;
+    right: 0;
+    bottom: 32%;
+  }
+}

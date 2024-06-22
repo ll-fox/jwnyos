@@ -105,7 +105,8 @@
   .container {
     flex-direction: column;
     width: 100%;
-    height: 30vh;
+    height: 100vh;
+    background-size: 100% 100%;
   }
 
   .circle1 {
@@ -114,11 +115,10 @@
   }
 
   .card {
-    height: 30vh;
+    height: 100vh;
     padding: 20px;
     align-items: center;
     text-align: center;
-    margin-top: 15px;
     justify-content: space-between;
   }
 
@@ -126,14 +126,15 @@
     font-size: 20px;
   }
   .brandName {
-    font-size: 25px;
+    font-size: 30px;
+    line-height: 100px;
   }
 
   .littleName {
     font-size: 20px;
   }
   .slogan {
-    font-size: 12px;
+    font-size: 16px;
     padding-top: 10px;
   }
 

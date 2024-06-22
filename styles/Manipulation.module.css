@@ -10,7 +10,8 @@
     border-radius: 20px;
     cursor:pointer
 }
-
-.sliderItem{
-    
+@media screen and (max-width: 480px) {
+    .swiper-horizontal{
+        margin-top: 30%;
+    }
 }
