@@ -18,8 +18,8 @@ function MyApp({ Component, pageProps }) {
       <Head>
         <title>金翁农业</title>
         <meta
-          name="description"
-          content="Web Design, App Development, Content Creation Agency Near Sweden"
+          name="金翁农业"
+          content="金翁农业, 金翁农业官网, 金翁农业科技有限公司"
         />
         <meta
           http-equiv="Content-Security-Policy"

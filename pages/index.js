@@ -14,7 +14,6 @@ import Modal from '../components/Modal'
 import styles from '../styles/Home.module.css'
 import { data } from '../data'
 import Testimonials from '../components/Testimonials'
-// Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
